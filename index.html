@@ -2,668 +2,846 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>The Orbit Framework | a lightweight Agile Software Development for Clarity and Flow</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>The Orbit Framework | a lightweight Agile Software Development for Clarity and Flow</title>
 
-  <meta name="keywords"
-    content="Orbit Framework, product methodology, product management, complexity scoring, agile, theorbitorg">
-  <meta name="author" content="The Orbit Org">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="canonical" href="https://theorbitorg.github.io/">
+    <meta name="keywords"
+        content="Orbit Framework, product methodology, product management, complexity scoring, agile, theorbitorg">
+    <meta name="author" content="The Orbit Org">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://theorbitorg.github.io/">
 
-  <meta property="og:title" content="The Orbit Framework: Systematic Clarity in Product Development" />
-<meta property="og:description" content="A lightweight, problem-first methodology that turns ambiguity into predictable, executable actions using complexity scoring." />
-<meta property="og:url" content="https://theorbitorg.github.io/" />
-<meta property="og:site_name" content="The Orbit Org" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="https://theorbitorg.github.io/assets/images/orbit-logo-preview.png" />
-<meta property="og:image:alt" content="The Orbit logo, a ring structure around a central dot." />
+    <meta property="og:title" content="The Orbit Framework: Problem-First Development with Controlled Clarity" />
+    <meta property="og:description"
+        content="A lightweight, problem-first methodology that turns ambiguity into predictable, executable actions using complexity scoring." />
+    <meta property="og:url" content="https://theorbitorg.github.io/" />
+    <meta property="og:site_name" content="The Orbit Org" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://theorbitorg.github.io/assets/images/orbit-logo-preview.png" />
+    <meta property="og:image:alt" content="The Orbit logo, a ring structure around a central dot." />
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@TheOrbitOrg" /> 
-<meta name="twitter:creator" content="@TheOrbitOrg" />
-<meta name="twitter:title" content="Orbit: Problem-First Product Flow" />
-<meta name="twitter:description" content="Transforming complexity into predictable product delivery with the Orbit Framework's 20 core practices." />
-<meta name="twitter:image" content="https://theorbitorg.github.io/assets/images/orbit-logo-preview.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@TheOrbitOrg" />
+    <meta name="twitter:creator" content="@TheOrbitOrg" />
+    <meta name="twitter:title" content="Orbit: Problem-First Product Flow" />
+    <meta name="twitter:description"
+        content="Transforming complexity into predictable product delivery with the Orbit Framework's 20 core practices." />
+    <meta name="twitter:image" content="https://theorbitorg.github.io/assets/images/orbit-logo-preview.png" />
 
-  <meta name="description"
-    content="Orbit is a comprehensive, problem-first product methodology that systematically moves from Problem to Executable Action using a clear hierarchy, complexity scoring, and managed discovery. Learn the Pillars, Principles, Practices, and Process Flow." />
-  <style>
-    /* ------------------------------------------------------------------ */
-    /* THEME & BASE STYLES - EDUCATIONAL/PROFESSIONAL THEME */
-    /* ------------------------------------------------------------------ */
-    :root {
-      --bg: #ffffff;
-      --card: #f8fafc;
-      --text: #1e293b;
-      --muted: #64748b;
-      --border: #e2e8f0;
-      --accent: #5b21b6;
-      --accent-light: #7c3aed;
-      --accent-comp: #0ea5e9;
-      --shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-      --gap: clamp(2.5rem, 5vw, 4rem);
-      --radius: 10px;
-      --max: 1200px;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      scroll-behavior: smooth;
-      /* Smooth scrolling for navigation */
-    }
+    <link rel="icon" type="image/png" href="/favicon.png">
 
-    * {
-      box-sizing: border-box
-    }
+    <meta name="description"
+        content="Orbit is a comprehensive, problem-first product methodology that systematically moves from Problem to Executable Action using a clear hierarchy, complexity scoring, and managed discovery. Learn the Pillars, Principles, Practices, and Process Flow." />
+    <style>
+        /* ------------------------------------------------------------------ */
+        /* THEME & BASE STYLES - EDUCATIONAL/PROFESSIONAL THEME */
+        /* ------------------------------------------------------------------ */
+        :root {
+            --bg: #ffffff;
+            --card: #f8fafc;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+            --accent: #5b21b6;
+            --accent-light: #7c3aed;
+            --accent-comp: #0ea5e9;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+            --gap: clamp(2.5rem, 5vw, 4rem);
+            --radius: 10px;
+            --max: 1200px;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
 
-    html,
-    body {
-      height: 100%
-    }
+        * {
+            box-sizing: border-box
+        }
 
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-      padding-top: 70px;
-      /* Space for fixed header */
-      padding-bottom: 0;
-      display: flex;
-      justify-content: center;
-    }
+        html,
+        body {
+            height: 100%
+        }
 
-    .page {
-      width: 100%;
-      max-width: var(--max);
-      padding: clamp(2rem, 5vw, 4rem);
-      padding-top: 0;
-    }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            padding-top: 68px;
+            /* Adjusted for cleaner fixed header height */
+            padding-bottom: 0;
+            display: flex;
+            justify-content: center;
+        }
 
-    h1,
-    h2,
-    h3 {
-      letter-spacing: -0.02em;
-      line-height: 1.15;
-      margin-top: 0;
-      color: var(--text);
-    }
+        .page {
+            width: 100%;
+            max-width: var(--max);
+            padding: clamp(2rem, 5vw, 4rem);
+            padding-top: 0;
+        }
 
-    h2 {
-      font-size: clamp(2rem, 3.5vw, 2.8rem);
-      margin-bottom: 0.5rem;
-      border-bottom: 2px solid var(--accent-light);
-      padding-bottom: 0.5rem;
-    }
+        h1,
+        h2,
+        h3 {
+            letter-spacing: -0.02em;
+            line-height: 1.15;
+            margin-top: 0;
+            color: var(--text);
+        }
 
-    h3 {
-      font-size: clamp(1.4rem, 2.5vw, 1.8rem);
-      color: var(--accent);
-      margin-top: 1.5rem;
-      margin-bottom: 0.75rem;
-    }
+        h2 {
+            font-size: clamp(2rem, 3.5vw, 2.8rem);
+            margin-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-light);
+            padding-bottom: 0.5rem;
+        }
 
-    p {
-      margin-top: 0;
-    }
+        h3 {
+            font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+            color: var(--accent);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
 
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
+        p {
+            margin-top: 0;
+        }
 
-    a:hover {
-      color: var(--accent-comp);
-    }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
 
-    ul,
-    ol {
-      padding-left: 20px;
-      margin-bottom: 1.5rem;
-    }
+        a:hover {
+            color: var(--accent-comp);
+        }
 
-    strong {
-      font-weight: 600;
-      color: var(--text);
-    }
+        ul,
+        ol {
+            padding-left: 20px;
+            margin-bottom: 1.5rem;
+        }
 
-    .section-wrap {
-      padding: var(--gap) 0;
-      border-top: 1px solid var(--border);
-    }
+        strong {
+            font-weight: 600;
+            color: var(--text);
+        }
 
-    /* ------------------------------------------------------------------ */
-    /* FIXED NAVIGATION BAR (NEW) */
-    /* ------------------------------------------------------------------ */
-    .fixed-header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: var(--bg);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      z-index: 1000;
-      padding: 0 2rem;
-      display: flex;
-      justify-content: center;
-    }
+        .section-wrap {
+            padding: var(--gap) 0;
+            border-top: 1px solid var(--border);
+        }
 
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      padding: 1rem 0;
-      max-width: var(--max);
-      width: 100%;
-      margin: 0;
-      border-bottom: none;
-    }
+        .image-container {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
 
-    header nav a.ghost {
-      font-size: 0.95rem;
-    }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-    .logo {
-      width: 38px;
-      height: 38px;
-      border-radius: 8px;
-      background: var(--accent);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 18px;
-      color: white;
-      box-shadow: 0 4px 10px rgba(91, 33, 182, 0.2);
-    }
+        /* ------------------------------------------------------------------ */
+        /* FIXED NAVIGATION BAR (DESKTOP) */
+        /* ------------------------------------------------------------------ */
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--bg);
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            /* Ensure it stays on top */
+        }
 
-    /* ------------------------------------------------------------------ */
-    /* HERO */
-    /* ------------------------------------------------------------------ */
-    .hero-content {
-      max-width: 900px;
-      margin: 0 auto 3rem auto;
-      text-align: center;
-      padding-top: 3rem;
-    }
+        header {
+            /* Desktop Two-Column Layout */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 0.75rem 4rem;
+            /* Reduced vertical padding */
+            max-width: var(--max);
+            width: 100%;
+            margin: 0 auto;
+        }
 
-    h1 {
-      font-size: clamp(2.8rem, 5vw, 4.2rem);
-      margin: 0 0 .5rem 0;
-      line-height: 1;
-    }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
 
-    /* ------------------------------------------------------------------ */
-    /* GENERAL CONTENT CARDS (Pillars, Values, Principles) */
-    /* ------------------------------------------------------------------ */
-    .grid-cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
-      margin-top: 1.5rem;
-    }
+        header nav {
+            /* Desktop Navigation Links */
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-    .card {
-      background: var(--card);
-      padding: 25px;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-    }
+        header nav a.ghost {
+            font-size: 0.95rem;
+            color: var(--muted);
+            font-weight: 600;
+            padding: 8px 12px;
+            display: inline-block;
+        }
 
-    .card h4 {
-      margin: 0 0 .6rem 0;
-      font-size: 1.25rem;
-      color: var(--accent);
-      border-bottom: 2px solid var(--accent-comp);
-      padding-bottom: 5px;
-      line-height: 1.3;
-    }
+        header nav a.cta {
+            background: var(--accent);
+            padding: 10px 18px;
+            border-radius: 6px;
+            color: #fff;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(91, 33, 182, 0.3);
+            transition: all 0.2s;
+            margin-left: 10px;
+        }
 
-    /* ------------------------------------------------------------------ */
-    /* ORBIT FLOW MAP (Refactored) */
-    /* ------------------------------------------------------------------ */
-    .flow-map-container {
-      text-align: center;
-      margin: 2rem 0;
-      padding: 2rem;
-      background: #f0faff;
-      border-radius: var(--radius);
-      border: 2px solid var(--accent-comp);
-    }
 
-    .flow-map-container h3 {
-      color: var(--accent-comp);
-      margin-top: 0;
-      font-size: 1.8rem;
-    }
+        .logo {
+            width: 38px;
+            height: 38px;
+            border-radius: 8px;
+            background: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 18px;
+            color: white;
+            box-shadow: 0 4px 10px rgba(91, 33, 182, 0.2);
+        }
 
-    .hierarchy {
-      display: flex;
-      justify-content: space-between;
-      gap: 1.5rem;
-      margin-top: 1.5rem;
-    }
+        /* ------------------------------------------------------------------ */
+        /* HERO */
+        /* ------------------------------------------------------------------ */
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto 3rem auto;
+            text-align: center;
+            padding-top: 3rem;
+        }
 
-    .level {
-      flex: 1;
-      text-align: center;
-      padding: 0 1rem;
-      position: relative;
-    }
+        h1 {
+            font-size: clamp(2.8rem, 5vw, 4.2rem);
+            margin: 0 0 .5rem 0;
+            line-height: 1;
+        }
 
-    .level:not(:last-child)::after {
-      content: '→';
-      position: absolute;
-      right: -10px;
-      top: 30px;
-      font-size: 2rem;
-      color: var(--accent-light);
-      font-weight: 700;
-    }
+        /* ------------------- REST OF STYLES (NO CHANGES) ------------------- */
 
-    .level h4 {
-      color: var(--accent);
-      font-size: 1.2rem;
-      margin: 0 0 0.25rem 0;
-      border-bottom: none;
-    }
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 1.5rem;
+        }
 
-    .level p {
-      font-size: 0.95rem;
-      color: var(--muted);
-    }
+        .card {
+            background: var(--card);
+            padding: 25px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+        }
 
-    /* ------------------------------------------------------------------ */
-    /* COMPLEXITY SCORING (Refactored) */
-    /* ------------------------------------------------------------------ */
-    .vague-definition {
-      background: #fff3f3;
-      border: 2px solid #ef4444;
-      padding: 20px;
-      border-radius: var(--radius);
-      margin-top: 1.5rem;
-    }
+        .card h4 {
+            margin: 0 0 .6rem 0;
+            font-size: 1.25rem;
+            color: var(--accent);
+            border-bottom: 2px solid var(--accent-comp);
+            padding-bottom: 5px;
+            line-height: 1.3;
+        }
 
-    .bucket-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 15px;
-      margin-top: 2rem;
-    }
+        .flow-map-container {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: #f0faff;
+            border-radius: var(--radius);
+            border: 2px solid var(--accent-comp);
+        }
 
-    .bucket-card {
-      background: #eef2ff;
-      padding: 15px;
-      border-radius: var(--radius);
-      text-align: center;
-      border: 1px solid var(--accent-light);
-    }
+        .flow-map-container h3 {
+            color: var(--accent-comp);
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
 
-    .bucket-card h4 {
-      margin: 0;
-      font-size: 1.2rem;
-      color: var(--accent);
-      border-bottom: none;
-    }
+        .hierarchy {
+            display: flex;
+            justify-content: space-between;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
 
-    .bucket-card p {
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
+        .level {
+            flex: 1;
+            text-align: center;
+            padding: 0 1rem;
+            position: relative;
+        }
 
-    /* ------------------------------------------------------------------ */
-    /* ROLES AND TEAM STRUCTURE */
-    /* ------------------------------------------------------------------ */
-    .role-card h4 {
-      color: var(--accent-light);
-      border-bottom-color: var(--border);
-    }
+        .level:not(:last-child)::after {
+            content: '→';
+            position: absolute;
+            right: -10px;
+            top: 30px;
+            font-size: 2rem;
+            color: var(--accent-light);
+            font-weight: 700;
+        }
 
-    .role-card strong {
-      color: var(--accent);
-      display: block;
-      margin-top: 0.5rem;
-    }
+        .level h4 {
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin: 0 0 0.25rem 0;
+            border-bottom: none;
+        }
 
-    /* ------------------------------------------------------------------ */
-    /* FINAL FOOTER / INTRODUCED BY (NEW) */
-    /* ------------------------------------------------------------------ */
-    .final-cta-section {
-      text-align: center;
-      padding: 4rem 0 0 0;
-      border-top: 2px dashed var(--border);
-    }
+        .level p {
+            font-size: 0.95rem;
+            color: var(--muted);
+        }
 
-    .final-cta-section h2 {
-      color: var(--accent);
-      font-size: 2.5rem;
-      border-bottom: none;
-    }
+        .vague-definition {
+            background: #fff3f3;
+            border: 2px solid #ef4444;
+            padding: 20px;
+            border-radius: var(--radius);
+            margin-top: 1.5rem;
+        }
 
-    .final-cta-section p {
-      font-size: 1.2rem;
-      color: var(--muted);
-      max-width: 700px;
-      margin: 1rem auto 2rem auto;
-    }
+        .bucket-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 2rem;
+        }
 
-    .final-cta-section .cta {
-      background: var(--accent-comp);
-      padding: 12px 24px;
-      font-size: 1.1rem;
-      box-shadow: 0 6px 15px rgba(14, 165, 233, 0.4);
-    }
+        .bucket-card {
+            background: #eef2ff;
+            padding: 15px;
+            border-radius: var(--radius);
+            text-align: center;
+            border: 1px solid var(--accent-light);
+        }
 
-    .final-cta-section .cta:hover {
-      background: #0093c4;
-    }
+        .bucket-card h4 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: var(--accent);
+            border-bottom: none;
+        }
 
-    footer {
-      margin-top: var(--gap);
-      padding: 20px 0;
-      color: var(--muted);
-      font-size: .92rem;
-      border-top: 1px solid var(--border);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
+        .bucket-card p {
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
 
-    @media (max-width:1000px) {
-      .hierarchy {
-        flex-direction: column;
-        align-items: stretch;
-      }
+        .role-card h4 {
+            color: var(--accent-light);
+            border-bottom-color: var(--border);
+        }
 
-      .level:not(:last-child) {
-        border-right: none;
-        border-bottom: 1px solid var(--accent-comp);
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
-      }
+        .role-card strong {
+            color: var(--accent);
+            display: block;
+            margin-top: 0.5rem;
+        }
 
-      .level:not(:last-child)::after {
-        content: '↓';
-        right: auto;
-        left: 50%;
-        bottom: 0;
-        top: auto;
-        transform: translateX(-50%);
-      }
-    }
+        .final-cta-section {
+            text-align: center;
+            padding: 4rem 0 0 0;
+            border-top: 2px dashed var(--border);
+        }
 
-    @media (max-width:600px) {
-      h1 {
-        font-size: 2.2rem
-      }
+        .final-cta-section h2 {
+            color: var(--accent);
+            font-size: 2.5rem;
+            border-bottom: none;
+        }
 
-      p.lead {
-        font-size: 1.1rem;
-      }
+        .final-cta-section p {
+            font-size: 1.2rem;
+            color: var(--muted);
+            max-width: 700px;
+            margin: 1rem auto 2rem auto;
+        }
 
-      .fixed-header nav {
-        display: none;
-      }
+        .final-cta-section .cta {
+            background: var(--accent-comp);
+            padding: 12px 24px;
+            font-size: 1.1rem;
+            box-shadow: 0 6px 15px rgba(14, 165, 233, 0.4);
+            margin: 0 5px;
+        }
 
-      .page {
-        padding: 1rem;
-      }
+        .final-cta-section .cta:hover {
+            background: #0093c4;
+        }
 
-      .bucket-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+        footer {
+            margin-top: var(--gap);
+            padding: 20px 0;
+            color: var(--muted);
+            font-size: .92rem;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        /* ------------------------------------------------------------------ */
+        /* MEDIA QUERIES */
+        /* ------------------------------------------------------------------ */
+
+        @media (max-width:1000px) {
+            .hierarchy {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .level:not(:last-child) {
+                border-right: none;
+                border-bottom: 1px solid var(--accent-comp);
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .level:not(:last-child)::after {
+                content: '↓';
+                right: auto;
+                left: 50%;
+                bottom: 0;
+                top: auto;
+                transform: translateX(-50%);
+            }
+        }
+
+        @media (max-width:600px) {
+            h1 {
+                font-size: 2.2rem
+            }
+
+            p.lead {
+                font-size: 1.1rem;
+            }
+
+            .page {
+                padding: 1rem;
+            }
+
+            .bucket-grid {
+                grid-template-columns: 1fr;
+            }
+
+            /* --- HEADER & MOBILE NAV REFACTOR --- */
+            header {
+                /* Remove side padding and use minimal vertical padding */
+                padding: 0.75rem 1rem;
+                /* Reset alignment for hamburger */
+                border-bottom: 1px solid var(--border);
+            }
+
+            /* 1. Show the hamburger button */
+            #menu-toggle {
+                display: block !important;
+            }
+
+            /* 2. Style the hidden menu container */
+            #main-nav {
+                /* Hides the menu on mobile by default */
+                display: none;
+                
+                /* Full-width, full-height drop-down below the header */
+                position: fixed;
+                top: 66px;
+                /* Below the header (adjust if header height changes) */
+                left: 0;
+                width: 100%;
+                height: calc(100vh - 66px); /* Use remaining viewport height */
+                background: var(--bg);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                z-index: 999;
+                
+                /* Setup the stacking of links */
+                flex-direction: column;
+                align-items: stretch;
+                padding: 10px 1rem;
+                overflow-y: auto; /* Allows scrolling if menu content is too long */
+            }
+
+            /* 3. SHOW the menu when the class is added by JS */
+            #main-nav.is-open {
+                display: flex;
+            }
+
+            /* 4. Style the stacked links */
+            #main-nav a {
+                padding: 15px 10px; /* Increased tap target */
+                text-align: left;
+                border-bottom: 1px solid var(--border);
+                margin: 0;
+                /* Reset margins */
+            }
+
+            #main-nav a.cta {
+                margin-top: 15px;
+                /* Extra space for the CTA button */
+                text-align: center;
+                margin-left: 0;
+            }
+            /* --- END MOBILE NAV REFACTOR --- */
+
+            footer {
+                justify-content: center;
+            }
+
+            footer div {
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        /* --- DESKTOP (Re-enable desktop layout) --- */
+        @media (min-width: 601px) {
+            #main-nav {
+                display: flex !important;
+                position: static !important;
+                flex-direction: row !important;
+                width: auto !important;
+                background: none !important;
+                box-shadow: none !important;
+            }
+
+            #menu-toggle {
+                display: none !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <div class="fixed-header">
-    <header>
-      <a class="brand" href="#top" aria-label="Orbit home">
-        <div class="logo">O</div>
-        <div>
-          <div style="font-weight:700; color: var(--text); font-size: 1.1rem;">Orbit Framework</div>
-        </div>
-      </a>
-      <nav>
-        <a class="ghost" href="#pillars">Pillars</a>
-        <a class="ghost" href="#process">Process & Map</a>
-        <a class="ghost" href="#scoring">Clarity & Risk</a>
-        <a class="ghost" href="#roles">Team Roles</a>
-        <a class="cta" href="https://leanpub.com/the-orbit" target="_blank" rel="noopener">Read the Book</a>
-      </nav>
-    </header>
-  </div>
+    <div class="fixed-header">
+        <header>
+            <a class="brand" href="#top" aria-label="Orbit home">
+                <div class="logo">O</div>
+                <div style="font-weight:700; color: var(--text); font-size: 1.1rem;">Orbit Framework</div>
+            </a>
 
-  <main class="page" role="main">
-    <section class="hero" id="top">
-      <div class="hero-content">
-        <h1>The Orbit Framework: Problem-First Development with Systematic Clarity.</h1>
-        <p class="lead">
-          Orbit is a lightweight, semi-structured, breadth-first methodology that mirrors how humans naturally break
-          down complex problems. It encourages teams to see the full picture, understand why they're building, and
-          systematically turn ambiguity into predictable action.
-        </p>
-        <div style="display:flex;gap:15px;align-items:center; justify-content:center;">
-          <a class="cta" href="#hierarchy">Explore the Orbit Flow Map</a>
-          <a style="color:var(--accent-comp); font-weight: 600;" href="#practices">See the Practice Loop</a>
-        </div>
-      </div>
-    </section>
+            <button id="menu-toggle" aria-label="Toggle navigation"
+                style="display:none; background:none; border:none; color:var(--accent); font-size:2rem; cursor:pointer; padding: 0 10px;">
+                ☰
+            </button>
 
-    <div class="section-wrap" id="pillars">
-      <h2>The Foundational Beliefs: Four Pillars of Orbit</h2>
-      <p style="color:var(--muted); max-width: 80ch;">These four pillars represent the foundational beliefs that
-        underpin every aspect of the Orbit framework, shaping its processes and guiding its adoption.</p>
-      <div class="grid-cards">
-        <article class="card">
-          <h4>Problem-Driven Development</h4>
-          <p>No work begins until the underlying problem is clearly defined from a user or business perspective. Orbit
-            insists that understanding why we are building is paramount, shifting the focus from output to outcome.</p>
-        </article>
-        <article class="card">
-          <h4>Clarity and Predictability</h4>
-          <p>Decisions and forecasts must be based on transparently understood complexity and resolved ambiguity. Orbit
-            provides tools to systematically surface unknowns for realistic expectations, fostering stakeholder trust.
-          </p>
-        </article>
-        <article class="card">
-          <h4>Value-Oriented Learning Cycles</h4>
-          <p>Value is created through small, incremental builds and continuously validated with real-world feedback.
-            This fosters a robust cycle of adaptation that constantly refines the product and its delivery.</p>
-        </article>
-        <article class="card">
-          <h4>Agility is Dependent on Craftsmanship</h4>
-          <p>True agility is directly tied to the skill level and continuous learning of the development team. Teams
-            must reflect on their skill status and actively acquire new skills to ensure well-crafted artifacts and
-            quality.</p>
-        </article>
-      </div>
+            <nav id="main-nav" class="desktop-only-nav">
+                <a class="ghost" href="#pillars">Pillars</a>
+                <a class="ghost" href="#process">Process & Map</a>
+                <a class="ghost" href="#scoring">Clarity & Risk</a>
+                <a class="ghost" href="#roles">Team Roles</a>
+                <a class="cta" href="https://www.linkedin.com/company/the-orbit-org" target="_blank"
+                    rel="noopener">LinkedIn</a>
+                <a class="cta" href="https://leanpub.com/the-orbit" target="_blank" rel="noopener">Read the Book</a>
+            </nav>
+        </header>
     </div>
+    <main class="page" role="main">
+        <section class="hero" id="top">
+            <div class="hero-content">
+                <h1>Orbit Framework</h1>
+                <h3>Problem-First Software Development for Precise Product Delivery and Flow</h3>
+                <p class="lead">
+                    Orbit is a lightweight, semi-structured, breadth-first methodology that mirrors how humans naturally
+                    break down complex problems. It encourages teams to see **the full picture**, understand **why**
+                    they're building, and continuously turn ambiguity into **predictable action**.
+                </p>
+                <div style="display:flex;gap:15px;align-items:center; justify-content:center;">
+                    <a class="cta" href="#hierarchy" style="margin-left: 0;">Explore the Orbit Flow Map</a>
+                    <a style="color:var(--accent-comp); font-weight: 600;" href="#practices">See the Practice Loop</a>
+                </div>
+            </div>
+        </section>
 
-    <div class="section-wrap" id="process">
-      <h2>The Orbit Product Flow and Hierarchy</h2>
-      <p style="color:var(--muted); max-width: 80ch;">Orbit is a dynamic, cyclical, and integrated process. The Orbit
-        Flow Map (Hierarchy) is its central artifact, providing a shared, holistic view that the entire team "orbits"
-        around, ensuring alignment at all levels.</p>
-
-      <h3 id="hierarchy" style="color: var(--accent-comp);">The Orbit Flow Map: Layered Structure and Shared Context
-      </h3>
-      <div class="flow-map-container">
-        <p style="color:var(--muted); font-style: italic; margin-bottom: 2rem;">The entire team collaborates to build
-          this map, ensuring a shared understanding from abstraction to detail.</p>
-        <div class="hierarchy">
-          <div class="level">
-            <h4>1. Problem Statement</h4>
-            <p>The Why and For Whom. Must be concise and outcome-oriented. (Product Focus)</p>
-          </div>
-          <div class="level">
-            <h4>2. Solution Journey</h4>
-            <p>The high-level user path (4-6 steps). Charts the intended user experience. (Product/Design Focus)</p>
-          </div>
-          <div class="level">
-            <h4>3. Deliverables</h4>
-            <p>Tangible components (code, designs) required for each journey step. (Design/Engineering Focus)</p>
-          </div>
-          <div class="level">
-            <h4>4. Executable Actions</h4>
-            <p>The granular tasks broken down from Deliverables. These are the items scored for complexity. (Engineering
-              Focus)</p>
-          </div>
+        <div class="image-container">
+            <img src="/assets/images/flow.png"
+                alt="Diagram showing the cyclical nature of the Orbit Framework process">
         </div>
-        <p style="color:var(--text); margin-top: 2rem; font-weight: 600;">Workshop: The Problem Flow Map Workshop is a
-          2–4 hour session used to collaboratively build this structure and flag initial Vague items.</p>
-      </div>
-    </div>
+        
+        <hr>
 
-    <div class="section-wrap" id="scoring">
-      <h2>Clarity, Risk, and Predictability: Complexity Scoring</h2>
-      <p style="color:var(--muted); max-width: 80ch;">Orbit replaces unreliable, time-based estimates with an objective
-        Weighted Scoring Model based on five key complexity factors. This approach highlights risks and drives proactive
-        discovery.</p>
-
-      <h3 style="color: var(--accent-comp);">The Five Complexity Factors (Scored 1-5)</h3>
-      <div class="grid-cards" style="grid-template-columns: repeat(auto-fit,minmax(250px,1fr));">
-        <article class="card">
-          <h4>Domain Clarity</h4>
-          <p>Understanding of business rules, requirements, and edge cases. Are the *rules* clear?</p>
-        </article>
-        <article class="card">
-          <h4>Technical Dependencies</h4>
-          <p>Reliance on legacy components, external services, or integrations. Are the *systems* reliable?</p>
-        </article>
-        <article class="card">
-          <h4>External Dependencies</h4>
-          <p>Relying on coordination or decisions from *other* internal teams. Are the *people* aligned?</p>
-        </article>
-        <article class="card">
-          <h4>Team Familiarity</h4>
-          <p>Familiarity with the required technologies, tools, or codebase. Are the *skills* present?</p>
-        </article>
-      </div>
-
-      <div class="vague-definition">
-        <h4 style="color: #ef4444; border-bottom: 2px dashed #f9a8a8;">What is a Vague Item? (The Critical Risk Signal)
-        </h4>
-        <p style="font-size: 1.05rem; line-height: 1.5;">An Executable Action whose average score across all factors is
-          $\mathbf{> 3.5}$ is categorized as Vague. This signals that there is not enough clarity to accurately estimate
-          or begin implementation.</p>
-        <p style="font-size: 1.05rem; color: var(--accent); font-weight: 600;">Action: Resolve Vague items through a
-          time-boxed spike (exploration) before committing to the main build.</p>
-      </div>
-
-      <h3 style="color: var(--accent);">Complexity Buckets (Informing Forecasts)</h3>
-      <p style="color:var(--muted); font-size: 0.95rem;">After scoring, actions are categorized into these buckets to
-        quickly communicate overall complexity and inform adaptive forecasts (based on empirical cycle velocity, not
-        rigid dates):</p>
-      <div class="bucket-grid">
-        <div class="bucket-card">
-          <h4>Tiny (1.0 - 1.5)</h4>
-          <p>Very low complexity. Clear requirements, familiar tech, minimal dependencies.</p>
+        <div class="section-wrap" id="pillars">
+            <h2>The Foundational Beliefs: Four Pillars of Orbit</h2>
+            <p style="color:var(--muted); max-width: 80ch;">These four pillars represent the foundational beliefs that
+                underpin every aspect of the Orbit framework, shaping its processes and guiding its adoption.</p>
+            <div class="grid-cards">
+                <article class="card">
+                    <h4>Problem-Driven Development</h4>
+                    <p>No work begins until the underlying problem is clearly defined from a user or business perspective.
+                        Orbit insists that understanding **why** we are building is paramount, shifting the focus from
+                        output to outcome.</p>
+                </article>
+                <article class="card">
+                    <h4>Clarity and Predictability</h4>
+                    <p>Decisions and forecasts must be based on transparently understood complexity and resolved ambiguity.
+                        Orbit provides tools to systematically surface unknowns for realistic expectations, fostering
+                        stakeholder trust.
+                    </p>
+                </article>
+                <article class="card">
+                    <h4>Value-Oriented Learning Cycles</h4>
+                    <p>"Value is created through small, incremental builds and continuously validated with real-world
+                        feedback. This fosters a robust cycle of adaptation that constantly refines the product and its
+                        delivery.</p>
+                </article>
+                <article class="card">
+                    <h4>Agility is Dependent on Craftsmanship</h4>
+                    <p>True agility is directly tied to the skill level and continuous learning of the development team.
+                        Teams must reflect on their skill status and actively acquire new skills to ensure well-crafted
+                        artifacts and quality.</p>
+                </article>
+            </div>
         </div>
-        <div class="bucket-card">
-          <h4>Medium (1.6 - 2.5)</h4>
-          <p>Moderate complexity. Well-understood but may involve minor dependencies or a slightly less familiar domain.
-          </p>
+        
+        <hr>
+
+        <div class="section-wrap" id="process">
+            <h2>The Orbit Product Flow and Hierarchy</h2>
+            <p style="color:var(--muted); max-width: 80ch;">Orbit is a dynamic, cyclical, and integrated process. The
+                Orbit Flow Map (Hierarchy) is its central artifact, providing a shared, holistic view that the entire team
+                "orbits" around, ensuring alignment at all levels.</p>
+
+            <h3 id="hierarchy" style="color: var(--accent-comp);">The Orbit Flow Map: Layered Structure and Shared
+                Context
+            </h3>
+            <div class="flow-map-container">
+                <p style="color:var(--muted); font-style: italic; margin-bottom: 2rem;">The entire team collaborates to
+                    build this map, ensuring a shared understanding from abstraction to detail.</p>
+                <div class="hierarchy">
+                    <div class="level">
+                        <h4>1. Problem Statement</h4>
+                        <p>The Why and For Whom. Must be concise and outcome-oriented. (**Product Focus**)</p>
+                    </div>
+                    <div class="level">
+                        <h4>2. Solution Journey</h4>
+                        <p>The high-level user path (4-6 steps). Charts the intended user experience. (**Product/Design
+                            Focus**)</p>
+                    </div>
+                    <div class="level">
+                        <h4>3. Deliverables</h4>
+                        <p>Tangible components (code, designs) required for each journey step. (**Design/Engineering
+                            Focus**)</p>
+                    </div>
+                    <div class="level">
+                        <h4>4. Executable Actions</h4>
+                        <p>The granular tasks broken down from Deliverables. These are the items scored for complexity.
+                            (**Engineering Focus**)</p>
+                    </div>
+                </div>
+                <p style="color:var(--text); margin-top: 2rem; font-weight: 600;">Workshop: The **Problem Flow Map
+                    Workshop** is a 2–4 hour session used to collaboratively build this structure and flag initial Vague
+                    items.</p>
+            </div>
+            <div class="image-container">
+                <img src="/assets/images/problem-flow-map.png"
+                    alt="Hierarchical diagram showing the flow from Problem Statement down to Executable Actions.">
+            </div>
         </div>
-        <div class="bucket-card">
-          <h4>Large (2.6 - 3.5)</h4>
-          <p>Significant complexity. Likely involves several dependencies, some ambiguity, or notable cross-team
-            coordination.</p>
+        
+        <hr>
+
+        <div class="section-wrap" id="scoring">
+            <h2>Clarity, Risk, and Predictability: Complexity Scoring</h2>
+            <p style="color:var(--muted); max-width: 80ch;">Orbit replaces unreliable, time-based estimates with an
+                objective **Weighted Scoring Model** based on five key complexity factors. This approach highlights risks
+                and drives proactive discovery.</p>
+
+            <h3 style="color: var(--accent-comp);">The Five Complexity Factors (Scored 1-5)</h3>
+            <div class="grid-cards" style="grid-template-columns: repeat(auto-fit,minmax(250px,1fr));">
+                <article class="card">
+                    <h4>Domain Clarity</h4>
+                    <p>Understanding of business rules, requirements, and edge cases. Are the rules clear?</p>
+                </article>
+                <article class="card">
+                    <h4>Technical Dependencies</h4>
+                    <p>Reliance on legacy components, external services, or integrations. Are the systems reliable?</p>
+                </article>
+                <article class="card">
+                    <h4>External Dependencies</h4>
+                    <p>Relying on coordination or decisions from other internal teams. Are the people aligned?</p>
+                </article>
+                <article class="card">
+                    <h4>Team Familiarity</h4>
+                    <p>Familiarity with the required technologies, tools, or codebase. Are the skills present?</p>
+                </article>
+            </div>
+
+            <div class="vague-definition">
+                <h4 style="color: #ef4444; border-bottom: 2px dashed #f9a8a8;">What is a Vague Item? (The Critical Risk
+                    Signal)
+                </h4>
+                <p style="font-size: 1.05rem; line-height: 1.5;">An Executable Action whose average score across all
+                    factors is **> 3.5** is categorized as **Vague**. This signals that there is not enough clarity to
+                    accurately estimate or begin implementation.</p>
+                <p style="font-size: 1.05rem; color: var(--accent); font-weight: 600;">Action: **Resolve Vague items**
+                    through a time-boxed spike (exploration) before committing to the main build.</p>
+            </div>
+
+            <h3 style="color: var(--accent);">Complexity Buckets (Informing Forecasts)</h3>
+            <p style="color:var(--muted); font-size: 0.95rem;">After scoring, actions are categorized into these buckets
+                to quickly communicate overall complexity and inform adaptive forecasts (based on empirical cycle velocity,
+                not rigid dates):</p>
+            <div class="bucket-grid">
+                <div class="bucket-card">
+                    <h4>Tiny (1.0 - 1.5)</h4>
+                    <p>Very low complexity. Clear requirements, familiar tech, minimal dependencies.</p>
+                </div>
+                <div class="bucket-card">
+                    <h4>Medium (1.6 - 2.5)</h4>
+                    <p>Moderate complexity. Well-understood but may involve minor dependencies or a slightly less familiar
+                        domain.
+                    </p>
+                </div>
+                <div class="bucket-card">
+                    <h4>Large (2.6 - 3.5)</h4>
+                    <p>Significant complexity. Likely involves several dependencies, some ambiguity, or notable cross-team
+                        coordination.</p>
+                </div>
+                <div class="bucket-card" style="background: #fef2f2; border: 1px solid #fca5a5;">
+                    <h4>Vague (> 3.5)</h4>
+                    <p>High Ambiguity. Requires a dedicated discovery spike before it can be re-scored into a bucket for
+                        implementation.</p>
+                </div>
+            </div>
         </div>
-        <div class="bucket-card" style="background: #fef2f2; border: 1px solid #fca5a5;">
-          <h4>Vague (> 3.5)</h4>
-          <p>High Ambiguity. Requires a dedicated discovery spike before it can be re-scored into a bucket for
-            implementation.</p>
+        
+        <hr>
+
+        <div class="section-wrap" id="roles">
+            <h2>Team Flow: Roles in Orbit vs. Traditional Titles</h2>
+            <p style="color:var(--muted); max-width: 80ch;">In Orbit, roles are **functions of contribution**, emphasizing
+                deep cross-functional collaboration. Ownership is shared, and expertise is contextual. What matters is who
+                can best contribute to clarity at a given phase, not their rigid organizational title.</p>
+
+            <div class="image-container">
+                <img src="/assets/images/roles.png"
+                    alt="Diagram showing the four collaborative Orbit roles: Problem Facilitator, Solution Builder, Discovery Catalyst, and Delivery Steward.">
+            </div>
+
+            <div class="grid-cards">
+                <article class="card role-card">
+                    <h4>Problem & Purpose Facilitator</h4>
+                    <p>**Traditional equivalent:** Product Owner/Product Manager.</p>
+                    **Involvement:** Defines Problem, Shapes Journey, Manages Stakeholder Expectations.
+                </article>
+                <article class="card role-card">
+                    <h4>Solution Enabler/Builder</h4>
+                    <p>**Traditional equivalent:** Senior Engineer/Architect/Tech Lead.</p>
+                    **Involvement:** Breaks into Executable Actions, Leads Complexity Scoring, Resolves Vague items.
+                </article>
+                <article class="card role-card">
+                    <h4>Discovery Catalyst</h4>
+                    <p>**Traditional equivalent:** UX Designer/Product Designer.</p>
+                    **Involvement:** Refines Solution Journey, Identifies Design Deliverables, Contributes to Complexity
+                    Scoring.
+                </article>
+                <article class="card role-card">
+                    <h4>Delivery Facilitator / Steward</h4>
+                    <p>**Traditional equivalent:** Scrum Master/Team Lead (Process Focus).</p>
+                    **Involvement:** Facilitates Workshops, Ensures Correct Level of Abstraction, Mediates Ambiguity.
+                </article>
+            </div>
         </div>
-      </div>
-    </div>
+        
+        <hr>
 
-    <div class="section-wrap" id="roles">
-      <h2>Team Flow: Roles in Orbit vs. Traditional Titles</h2>
-      <p style="color:var(--muted); max-width: 80ch;">In Orbit, roles are functions of contribution, emphasizing deep
-        cross-functional collaboration. Ownership is shared, and expertise is contextual. What matters is who can best
-        contribute to clarity at a given phase, not their rigid organizational title.</p>
+        <div class="section-wrap" id="practices">
+            <h2>The Orbit Practice Loop: Turning Principles into Action</h2>
+            <p style="color:var(--muted); max-width: 80ch;">The Practice Loop is a dynamic set of **twenty core
+                practices** across five areas—Discovery & Framing, Collaboration, Delivery, Validation, and Team Growth.
+                They animate the Orbit structure, creating a culture of high-trust collaboration and continuous learning.
+            </p>
 
-      <div class="grid-cards">
-        <article class="card role-card">
-          <h4>Problem & Purpose Facilitator</h4>
-          <p><strong>Traditional equivalent:</strong> Product Owner/Product Manager.</p>
-          <strong>Involvement: Defines Problem, Shapes Journey, Manages Stakeholder Expectations.</strong>
-        </article>
-        <article class="card role-card">
-          <h4>Solution Enabler/Builder</h4>
-          <p><strong>Traditional equivalent:</strong> Senior Engineer/Architect/Tech Lead.</p>
-          <strong>Involvement: Breaks into Executable Actions, Leads Complexity Scoring, Resolves Vague items.</strong>
-        </article>
-        <article class="card role-card">
-          <h4>Discovery Catalyst</h4>
-          <p><strong>Traditional equivalent:</strong> UX Designer/Product Designer.</p>
-          <strong>Involvement: Refines Solution Journey, Identifies Design Deliverables, Contributes to Complexity
-            Scoring.</strong>
-        </article>
-        <article class="card role-card">
-          <h4>Delivery Facilitator / Steward</h4>
-          <p><strong>Traditional equivalent:</strong> Scrum Master/Team Lead (Process Focus).</p>
-          <strong>Involvement: Facilitates Workshops, Ensures Correct Level of Abstraction, Mediates Ambiguity.</strong>
-        </article>
-      </div>
-    </div>
-
-    <div class="section-wrap" id="practices">
-      <h2>The Orbit Practice Loop: Turning Principles into Action</h2>
-      <p style="color:var(--muted); max-width: 80ch;">The Practice Loop is a dynamic set of twenty core practices across
-        five areas—Discovery & Framing, Collaboration, Delivery, Validation, and Team Growth. They animate the Orbit
-        structure, creating a culture of high-trust collaboration and continuous learning.</p>
-
-      <div class="grid-cards" style="grid-template-columns: repeat(auto-fit,minmax(250px,1fr));">
-        <article class="card">
-          <h4>Discovery & Framing</h4>
-          <p>Problem Framing, Assumption Surfacing, Vague Item Logging.</p>
-        </article>
-        <article class="card">
-          <h4>Collaboration & Design</h4>
-          <p>Cross-Functional Pairing, Lightweight Design Sketching, Feedback Seeking Early.</p>
-        </article>
-        <article class="card">
-          <h4>Delivery & Execution</h4>
-          <p>Just-In-Time Decomposition, Executable Action Scoring, Spike Before Build.</p>
-        </article>
-        <article class="card">
-          <h4>Validation & Learning</h4>
-          <p>Outcome Review, Backward Thinking (Retros), Learning Metrics Reflection.</p>
-        </article>
-        <article class="card">
-          <h4>Team Growth & Sustainability</h4>
-          <p>Skill Feedback Loop, Rhythm Calibration, Slack Time for Learning.</p>
-        </article>
-      </div>
-      <div style="text-align: center; margin-top: 2rem;">
-        <p style="color: var(--text); font-style: italic;">The goal is momentum, alignment, and learning. Start with a
-          few practices, build rituals, reflect, and grow.</p>
-      </div>
-    </div>
+            <div class="grid-cards" style="grid-template-columns: repeat(auto-fit,minmax(250px,1fr));">
+                <article class="card">
+                    <h4>Discovery & Framing</h4>
+                    <p>Problem Framing, Assumption Surfacing, Vague Item Logging.</p>
+                </article>
+                <article class="card">
+                    <h4>Collaboration & Design</h4>
+                    <p>Cross-Functional Pairing, Lightweight Design Sketching, Feedback Seeking Early.</p>
+                </article>
+                <article class="card">
+                    <h4>Delivery & Execution</h4>
+                    <p>Just-In-Time Decomposition, Executable Action Scoring, Spike Before Build.</p>
+                </article>
+                <article class="card">
+                    <h4>Validation & Learning</h4>
+                    <p>Outcome Review, Backward Thinking (Retros), Learning Metrics Reflection.</p>
+                </article>
+                <article class="card">
+                    <h4>Team Growth & Sustainability</h4>
+                    <p>Skill Feedback Loop, Rhythm Calibration, Slack Time for Learning.</p>
+                </article>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <p style="color: var(--text); font-style: italic;">The goal is **momentum, alignment, and learning**.
+                    Start with a few practices, build rituals, reflect, and grow.</p>
+            </div>
+        </div>
 
 
-    <div class="final-cta-section">
-      <h2>Ready to Master Product Clarity?</h2>
-      <p>The Orbit Framework is ready to transform your team's development process, giving you the clarity needed to
-        deliver predictable value. Start your journey today.</p>
-      <a class="cta" href="https://leanpub.com/the-orbit" target="_blank" rel="noopener">Read Chapter 1 & Get Started
-        ▸</a>
-    </div>
+        <div class="final-cta-section">
+            <h2>Ready to Master Product Clarity?</h2>
+            <p>The Orbit Framework is ready to transform your team's development process, giving you the clarity needed to
+                deliver predictable value. Start your journey today.</p>
+            <a class="cta" href="https://leanpub.com/the-orbit" target="_blank" rel="noopener">Read Chapter 1 & Get
+                Started ▸</a>
+            <a class="cta" href="https://www.linkedin.com/company/the-orbit-org" target="_blank" rel="noopener" style="background: #0077b5; box-shadow: 0 6px 15px rgba(0, 119, 181, 0.4);">
+                Follow Orbit on LinkedIn ▸
+            </a>
+        </div>
 
-    <footer>
-      <div>© Masoud Bahrami — The Orbit Framework</div>
-      <div style="display:flex;gap:12px;align-items:center">
-        <span style="font-weight: 700;">Introduced by Masoud Bahrami</span>
-      </div>
-    </footer>
-  </main>
+        <footer>
+            <div>© The Orbit Framework</div>
+            <div style="display:flex;gap:12px;align-items:center">
+                <span style="font-weight: 700;">Introduced by <a href="https://masoudbahrami.com/"> Masoud Bahrami</a></span>
+            </div>
+        </footer>
+    </main>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggleButton = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('main-nav');
+        const navLinks = navMenu.querySelectorAll('a');
+
+        // Toggle the menu visibility when the hamburger icon is clicked
+        toggleButton.addEventListener('click', function () {
+            navMenu.classList.toggle('is-open');
+        });
+
+        // Close the menu when any link inside it is clicked (mobile experience)
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                if (navMenu.classList.contains('is-open')) {
+                    navMenu.classList.remove('is-open');
+                }
+            });
+        });
+    });
+</script>
 
 </html>
